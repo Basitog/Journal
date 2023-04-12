@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Journal</title>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-6">
+        <h2>Journal</h2>
+        <form id="word-counter">
+          <div class="form-group">
+            <p>Title</p>
+            <input type="text" id="word" name="word" class="form-control">
+            <br>
+            <p>Passage</p>
+            <textarea id="text-passage" name="text-passage" class="form-control"></textarea>
+
+            <br>
+            <button type="submit" id="button1" class="btn btn-outline-danger">Submit Survey</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-6" id="div2">
+        <h2>Results:</h2>
+        <ul>
+        <li><strong>Title:</strong><span id="title"></span></li>
+        <li><strong>Total Word Count:</strong> <span id="total-count"></span></li>
+        <li><strong>Total Vowel Count:</strong> <span id="vowel"></span></li>
+        <li><strong>Total Consonant Count:</strong> <span id="consonant"></span></li>
+        <li><strong>Teaser:</strong><span id="teaser"></span></li>
+      </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
